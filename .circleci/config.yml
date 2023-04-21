@@ -21,12 +21,27 @@ jobs:
           cache-version: v1
 
       - run:
+          name: Add Google services to App
+          command: |
+            echo "$GOOGLE_SERVICES" | base64 --decode > android/app/google-services.json
+
+      - run:
           name: Build APK
           command: |
             flutter build apk
 
       - store_artifacts:
           path: build/app/outputs/flutter-apk/app-release.apk
+
+      - run:
+          name: Distribute app For testing
+          command: |
+            export GOOGLE_SERVICES="$(pwd)/android/app/google-services.json"  
+            DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+            firebase appdistribution:distribute build/app/outputs/flutter-apk/app-release.apk  \
+            --groups "flutter_circle_ci_demo_tester" \
+            --app "$FIREBASE_APP_ID"  \
+            --release-notes "Version: $VERSION_CODE"
  
 
   
