@@ -24,30 +24,30 @@ jobs:
           name: Add Google services to App
           command: |
             echo "$GOOGLE_SERVICES" | base64 -di > android/app/google-services.json
-            echo $GOOGLE_SERVICES | base64 -di
+            echo "$GOOGLE_SERVICES" | base64 -di
             
-      - run:
-          name: Flutter pub get
-          command: |
-            flutter pub get
+      # - run:
+      #     name: Flutter pub get
+      #     command: |
+      #       flutter pub get
 
-      - run:
-          name: Build APK
-          command: |
-            flutter build apk
+      # - run:
+      #     name: Build APK
+      #     command: |
+      #       flutter build apk
 
-      - store_artifacts:
-          path: build/app/outputs/flutter-apk/app-release.apk
+      # - store_artifacts:
+      #     path: build/app/outputs/flutter-apk/app-release.apk
 
-      - run:
-          name: Distribute app For testing
-          command: |
-            export GOOGLE_SERVICES="$(pwd)/android/app/google-services.json"  
-            DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-            firebase appdistribution:distribute build/app/outputs/flutter-apk/app-release.apk  \
-            --groups "flutter_circle_ci_demo_tester" \
-            --app "$FIREBASE_APP_ID"  \
-            --release-notes "Version: $VERSION_CODE"
+      # - run:
+      #     name: Distribute app For testing
+      #     command: |
+      #       export GOOGLE_SERVICES="$(pwd)/android/app/google-services.json"  
+      #       DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+      #       firebase appdistribution:distribute build/app/outputs/flutter-apk/app-release.apk  \
+      #       --groups "flutter_circle_ci_demo_tester" \
+      #       --app "$FIREBASE_APP_ID"  \
+      #       --release-notes "Version: $VERSION_CODE"
  
 
   
