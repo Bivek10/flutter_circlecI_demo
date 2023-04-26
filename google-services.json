@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "792173697055",
+    "project_id": "flutter-circleci-demo",
+    "storage_bucket": "flutter-circleci-demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792173697055:android:52e8b3357fa56ba085dd2a",
+        "android_client_info": {
+          "package_name": "com.example.flutter_circleci_demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792173697055-oa3ri2utmict8gb96gmtl3hgtg3oe68o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJxD_JPuGrSu9Bmw6gwEQPWC6qY1h-tr8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792173697055-oa3ri2utmict8gb96gmtl3hgtg3oe68o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
