@@ -43,6 +43,10 @@ jobs:
           name: "Install Firebase CLI"
           command: |
             curl -sL firebase.tools | bash
+            
+      - run:
+          name: Firebase login
+          command: firebase login --no-localhost --ci
 
       - run:
           name: Distribute app For testing
