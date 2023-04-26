@@ -41,6 +41,11 @@ jobs:
           path: build/app/outputs/flutter-apk/app-release.apk
 
       - run:
+          name: Install Firebase CLI
+          command: |
+            sudo npm install -g firebase-tools
+
+      - run:
           name: Distribute app For testing
           command: |
             export GOOGLE_SERVICES="$(pwd)/android/app/google-services.json"  
