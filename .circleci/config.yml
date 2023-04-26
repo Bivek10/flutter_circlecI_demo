@@ -24,6 +24,10 @@ jobs:
           name: Add Google services to App
           command: |
             echo "$GOOGLE_SERVICES" | base64 --decode > android/app/google-services.json
+      - run:
+          name: Flutter pub get
+          command: |
+            flutter pub get
 
       - run:
           name: Build APK
