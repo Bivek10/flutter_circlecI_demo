@@ -52,7 +52,9 @@ jobs:
             firebase appdistribution:distribute build/app/outputs/flutter-apk/app-release.apk  \
             --groups "flutter_circle_ci_demo_tester" \
             --app "$FIREBASE_APP_ID"  \
-            --release-notes "Version: 1.0.0" --token "$FIREBASE_TOKEN"
+            --token "$FIREBASE_TOKEN" \
+            --release-notes "Version: 1.0.0" 
+            
 
   
 
