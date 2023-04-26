@@ -43,10 +43,6 @@ jobs:
           name: "Install Firebase CLI"
           command: |
             curl -sL firebase.tools | bash
-            
-      - run:
-          name: Firebase login
-          command: firebase login --no-localhost --ci
 
       - run:
           name: Distribute app For testing
@@ -56,8 +52,7 @@ jobs:
             firebase appdistribution:distribute build/app/outputs/flutter-apk/app-release.apk  \
             --groups "flutter_circle_ci_demo_tester" \
             --app "$FIREBASE_APP_ID"  \
-            --token "$FIREBASE_TOKEN" \
-            --release-notes "Version: 1.0.0" 
+            --release-notes "Version: 1.0.0" --token "$FIREBASE_TOKEN" 
             
 
   
