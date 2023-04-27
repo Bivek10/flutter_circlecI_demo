@@ -23,9 +23,10 @@ jobs:
       - run:
           name: Add Google services to App
           command: |
-            echo "$GOOGLE_SERVICES" | base64 --decode
+            echo "$FIREBASE_OPTIONS" | base64 --decode > lib/firebase_options.dart
             echo "$GOOGLE_SERVICES" | base64 --decode > android/app/google-services.json
-    
+
+
       - run:
           name: Flutter pub get
           command: |
@@ -52,7 +53,7 @@ jobs:
             firebase appdistribution:distribute build/app/outputs/flutter-apk/app-release.apk  \
             --groups "flutter_circle_ci_demo_tester" \
             --app "$FIREBASE_APP_ID"  \
-            --release-notes "Version: 1.0.0" --token "$FIREBASE_TOKEN" 
+            --release-notes "Version: 1.0.0"  
             
 
   
