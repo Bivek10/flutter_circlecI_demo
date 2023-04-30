@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_circleci_demo/firebase_options.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-  options: DefaultFirebaseOptions.currentPlatform,
-);
+//   WidgetsFlutterBinding.ensureInitialized();
+//   await Firebase.initializeApp(
+//   options: DefaultFirebaseOptions.currentPlatform,
+// );
   runApp(const MyApp());
 }
 
