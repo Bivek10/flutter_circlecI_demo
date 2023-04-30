@@ -20,10 +20,10 @@ jobs:
       - flutter/install_pub:
           cache-version: v1
 
-      - run:
-          name: Add Firebase options to App
-          command: |
-            echo "$FIREBASE_OPTIONS" | base64 --decode > lib/firebase_options.dart
+      # - run:
+      #     name: Add Firebase options to App
+      #     command: |
+      #       echo "$FIREBASE_OPTIONS" | base64 --decode > lib/firebase_options.dart
 
       - run:
           name: Add Google services to App
