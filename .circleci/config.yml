@@ -21,11 +21,14 @@ jobs:
           cache-version: v1
 
       - run:
-          name: Add Google services to App
+          name: Add Firebase options to App
           command: |
             echo "$FIREBASE_OPTIONS" | base64 --decode > lib/firebase_options.dart
-            echo "$GOOGLE_SERVICES" | base64 --decode > android/app/google-services.json
 
+      - run:
+          name: Add Google services to App
+          command: |
+            echo "$GOOGLE_SERVICES" | base64 --decode > android/app/google-services.json
 
       - run:
           name: Flutter pub get
