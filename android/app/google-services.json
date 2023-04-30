@@ -1,12 +1,39 @@
 {
-  "type": "service_account",
-  "project_id": "flutter-circleci-demo",
-  "private_key_id": "909acc98eb1d75cad5f1d2fc218d896b43e73264",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCy6hiD8hJtXpGB\nYD4dl97kxOVrmiUoTq1L95mPcuZhrMsH4I2/INj3e2dUOoq0nBudShMk9DchgVA4\ngFL5i+/iKq36pEEYeDF2ojX/4QwXlUqi1MuiK7vlV62Jl3YROm6/F4nIgZH4i3nT\nozVpzZw0BYwzTNx88pmkhqd4g+8cXrOFEOFhiGvTK52MNJo5dS7iVz4yuCjXG6CC\nc7HLZyxRU7TJclaEFZI1M/+mZmLZMT6TOVJpQGvt5KPUnWVAZdwpdlbnaVh/LGOx\nP3l5SEIPSySX8o322Zn4qcxwwUKQo9j71ks8PBcrOqGSbG1VnLYtqEeX6csKgEGa\nnJBDfkoBAgMBAAECggEABYKtR58UjzbK73up3hp33H7t+/7u5wtpTf4txhvJWbfL\nNw5k/z6BQDoWSCNXc1Gdjh4icdBtxEPp1xuospPrSwF6g048zQaiq186n4tsZmuM\nNXCtZuzG6DznlOXL1qMAlzUf4sOO3eNZ2Lldo0kYZwfGtivHXLfSIJ2fGdiibDK3\nMJA4tyBM/PA9+2Esrib6KWQSe8/PDVZqaEhDOGTs7qk8nvk7Neg3HUdJrhBR7P/+\ng4WS+SNPRbEwenIF9THoIYMcZchEzP172XciE/Vpd2flMgbDpr5v5C5jG1m+hPk9\nB4AWFiZeFb22aqf5hR7zwu7OtxDR0VcaJ6Dmxds1gQKBgQD1vIOFXN3N913F/4gi\nB+iOZsikQNF/LE1JCFI641bs8JEZ5rwOVCU5Wd1/JMqGA84RMtHY3npfhu0SEtJ0\n17GsiBPUbJ0nyi6yoXjDOJqUgCm/ELhb3LkxCKL7Ta+0IPZJh0jEnrlwRdayy40/\nLdOVrwj6pNoKx2afNIYbZORqEQKBgQC6YxoaFmuRt2AlmJNZpna1nbULuSweI5zZ\nIeauDmj8JhTRA5Q0o2ySPym8xJLLvBh5eH162My33zQrxWg3d8AAxzZCMSdOCNnR\n6o4Dy66TRADKDGaQBCyhrXh7DgjCJ2rZXXSoIYr+I5/m3eeXiVGrw9xpkKO1lqAy\nwwtvYh9w8QKBgQDI92PkRF+NWzkQfXt6wVb6Zqq+UdhDFhsamDiPum7TlaZFNYMk\ngMJ0lb7khVUvppr3S8V8g+42g6UMO+Jr9h5zSFJXToB0ExB/vDiEB527xtjdTjJH\nxkqaBEMuHImOWcqxtXbYfiqP3D3KuVeJjNPWPXCtcvZzDEIr/4uRicCX0QKBgDMJ\n1Cn0nbwnNMLWxvKzrKoK53qwWC5gniCvMdXTyFfTrbuWeUz4u1BIz4sLYQ89EI6i\nuemb2GM5UbXytpkJx5/u7SKvBw5NSig7TGwpqEJXSsgJIUSqf/Y95FH+A9P2q0Ge\nX8VyefchljXH6hUK2zxnw8F8g/fDqVZ9JnJ3shhhAoGAY5g63BHaFUpvPflhIFCQ\nDOpP2pXv++MBZrkQsgjJR/W7eY8yegyD2GlUBc8AhZr+QHokG2P0D2WGPzp3tFv0\nmHU7oW69hMKRcFfh2i5kfaShzGUPtrndz2Bnt7YG27N6dAXOustOyI+bbrxkBzea\nBFrbpHOcGPRL5AHa4QF4i7Q=\n-----END PRIVATE KEY-----\n",
-  "client_email": "firebase-adminsdk-6mcga@flutter-circleci-demo.iam.gserviceaccount.com",
-  "client_id": "109679564531458026701",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-6mcga%40flutter-circleci-demo.iam.gserviceaccount.com"
+  "project_info": {
+    "project_number": "792173697055",
+    "project_id": "flutter-circleci-demo",
+    "storage_bucket": "flutter-circleci-demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792173697055:android:52e8b3357fa56ba085dd2a",
+        "android_client_info": {
+          "package_name": "com.example.flutter_circleci_demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792173697055-oa3ri2utmict8gb96gmtl3hgtg3oe68o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJxD_JPuGrSu9Bmw6gwEQPWC6qY1h-tr8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792173697055-oa3ri2utmict8gb96gmtl3hgtg3oe68o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
 }
