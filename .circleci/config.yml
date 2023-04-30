@@ -50,15 +50,14 @@ jobs:
 
       - run:
           name: Distribute app For testing
-          command: |
-            export GOOGLE_SERVICES="$(pwd)/android/app/google-services.json"  
+          command: |  
             DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
             firebase appdistribution:distribute build/app/outputs/flutter-apk/app-release.apk  \
             --groups "flutter_circle_ci_demo_tester" \
             --app "$FIREBASE_APP_ID"  \
             --release-notes "Version: 1.0.0"  
             
-
+  # export GOOGLE_SERVICES="$(pwd)/android/app/google-services.json"
   
 
 
