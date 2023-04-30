@@ -25,10 +25,10 @@ jobs:
       #     command: |
       #       echo "$FIREBASE_OPTIONS" | base64 --decode > lib/firebase_options.dart
 
-      - run:
-          name: Add Google services to App
-          command: |
-            echo "$GOOGLE_SERVICES" | base64 --decode > android/app/google-services.json
+      # - run:
+      #     name: Add Google services to App
+      #     command: |
+      #       echo "$GOOGLE_SERVICES" | base64 --decode > android/app/google-services.json
 
       - run:
           name: Flutter pub get
