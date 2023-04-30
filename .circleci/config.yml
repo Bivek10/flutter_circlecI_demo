@@ -55,7 +55,7 @@ jobs:
             DATE=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
             firebase appdistribution:distribute build/app/outputs/flutter-apk/app-release.apk  \
             --groups "flutter_circle_ci_demo_tester" \
-            --app "$FIREBASE_APP_ID"  \
+            --app "1:792173697055:android:52e8b3357fa56ba085dd2a"  \
             --release-notes "Version: 1.0.0"  
             
   
